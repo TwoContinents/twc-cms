@@ -8,11 +8,11 @@
   },
   "options": {},
   "attributes": {
-    "metaTitle": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "metaDescription": {
+    "description": {
       "type": "text",
       "required": true
     },
@@ -21,6 +21,55 @@
       "multiple": false,
       "required": false,
       "allowedTypes": ["images"]
+    },
+    "keywords": {
+      "type": "text",
+      "required": true
+    },
+    "metaTitle": {
+      "type": "string",
+      "maxLength": 60,
+      "required": false
+    },
+    "metaDescription": {
+      "type": "string",
+      "required": false,
+      "maxLength": 160,
+      "minLength": 50
+    },
+    "metaImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "metaSocial": {
+      "displayName": "metaSocial",
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.meta-social"
+    },
+    "metaRobots": {
+      "type": "string",
+      "required": false,
+      "unique": false,
+      "regex": "[^,]+"
+    },
+    "structuredData": {
+      "type": "json"
+    },
+    "metaViewport": {
+      "type": "string"
+    },
+    "canonicalURL": {
+      "type": "string"
+    },
+    "additionalSeoText": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }

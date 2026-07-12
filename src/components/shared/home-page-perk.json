@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_property_home_page_perks",
+  "info": {
+    "displayName": "HomePagePerk",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "iconType": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.icon",
+      "required": false
+    }
+  }
+}

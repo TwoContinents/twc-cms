@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_property_market_plan_hero_sections",
+  "info": {
+    "displayName": "MarketPlanHeroSection",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tag": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subTitle": {
+      "type": "string",
+      "required": true
+    },
+    "color": {
+      "type": "string",
+      "required": true
+    },
+    "backgroundColor": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "startingPrice": {
+      "type": "biginteger",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties",
+  "info": {
+    "singularName": "property",
+    "pluralName": "properties",
+    "displayName": "Property",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "price": {
+      "type": "integer",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "area": {
+      "type": "integer",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "bedrooms": {
+      "type": "integer",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "bathrooms": {
+      "type": "integer",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "facilities": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::property-facility.property-facility",
+      "inversedBy": "properties"
+    },
+    "perks": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::property-perk.property-perk",
+      "inversedBy": "properties"
+    },
+    "communityDescription": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text",
+      "required": false
+    },
+    "pictures": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "videos",
+        "images",
+        "files"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "placesNearby": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::property-nearby.property-nearby",
+      "inversedBy": "properties"
+    },
+    "hookText": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text",
+      "required": true
+    },
+    "description": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text",
+      "required": true
+    },
+    "type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::property-type.property-type",
+      "inversedBy": "properties"
+    },
+    "location": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "component": "shared.location",
+      "required": true
+    },
+    "subname": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "marketPlans": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::property-market-plan.property-market-plan",
+      "inversedBy": "properties"
+    },
+    "marketType": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::property-market-type.property-market-type",
+      "inversedBy": "properties"
+    },
+    "faqs": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.faq",
+      "required": false
+    },
+    "caretaker": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::property-caretaker.property-caretaker",
+      "inversedBy": "properties"
+    },
+    "investment": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::property-investment.property-investment",
+      "inversedBy": "properties"
+    },
+    "furnishing": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "FULLY_FURNISHED",
+        "UNFURNISHED",
+        "PARTLY_FURNISHED"
+      ],
+      "required": true
+    },
+    "featuredPictures": {
+      "displayName": "FeaturedPictures",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.featured-pictures"
+    },
+    "completionDate": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": false
+    },
+    "paymentPlan": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "property.payment-plan"
+    }
+  }
+}

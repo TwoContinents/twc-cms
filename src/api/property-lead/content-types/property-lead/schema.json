@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "property_leads",
+  "info": {
+    "singularName": "property-lead",
+    "pluralName": "property-leads",
+    "displayName": "PropertyLead",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullName": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": false
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "mortageData": {
+      "type": "component",
+      "component": "property.mortage-data",
+      "repeatable": false
+    },
+    "caretaker": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::property-caretaker.property-caretaker",
+      "inversedBy": "Leads"
+    },
+    "property": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::property.property"
+    },
+    "type": {
+      "type": "enumeration",
+      "required": false,
+      "default": "CONTACT",
+      "enum": [
+        "CONTACT",
+        "BROSHURE"
+      ]
+    },
+    "consultant": {
+      "type": "string"
+    },
+    "marketingConsent": {
+      "type": "boolean"
+    },
+    "dataProcessingConsent": {
+      "type": "boolean"
+    },
+    "source": {
+      "type": "string"
+    },
+    "localePrefix": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "blocks"
+    }
+  }
+}

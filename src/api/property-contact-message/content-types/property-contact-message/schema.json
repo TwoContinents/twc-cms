@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "property_contact_messages",
+  "info": {
+    "singularName": "property-contact-message",
+    "pluralName": "property-contact-messages",
+    "displayName": "PropertyContactMessage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "message": {
+      "type": "text",
+      "required": true
+    },
+    "fullName": {
+      "type": "string",
+      "required": true
+    },
+    "company": {
+      "type": "string",
+      "required": false
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

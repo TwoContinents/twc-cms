@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_labels",
+  "info": {
+    "displayName": "PluralableLabel",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "one": {
+      "type": "string",
+      "required": true
+    },
+    "few": {
+      "type": "string",
+      "required": true
+    },
+    "many": {
+      "type": "string",
+      "required": true
+    },
+    "other": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

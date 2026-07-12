@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_property_market_plan_categories",
+  "info": {
+    "displayName": "MarketPlanCategory"
+  },
+  "options": {},
+  "attributes": {
+    "marketPlan": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::property-market-plan.property-market-plan"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "startingPrice": {
+      "type": "integer",
+      "required": true
+    },
+    "startingPriceText": {
+      "type": "string",
+      "required": true
+    },
+    "buttonText": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

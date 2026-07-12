@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_mortage_data",
+  "info": {
+    "displayName": "MortageData",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "propertyValue": {
+      "type": "decimal",
+      "required": true
+    },
+    "loanDuration": {
+      "type": "integer",
+      "required": true
+    },
+    "downPayment": {
+      "type": "decimal",
+      "required": true
+    },
+    "monthlyPayment": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}

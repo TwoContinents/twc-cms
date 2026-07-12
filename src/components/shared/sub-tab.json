@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shared_sub_tabs",
+  "info": {
+    "displayName": "Sub Tab",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

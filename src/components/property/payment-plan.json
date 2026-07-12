@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_property_payment_plans",
+  "info": {
+    "displayName": "PaymentPlan"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

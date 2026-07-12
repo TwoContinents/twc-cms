@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_property_mortage_calculators",
+  "info": {
+    "displayName": "MortageCalculator",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "propertyValueText": {
+      "type": "string",
+      "required": true
+    },
+    "loanDurationText": {
+      "type": "string",
+      "required": true
+    },
+    "downPaymentText": {
+      "type": "string",
+      "required": true
+    },
+    "tag": {
+      "type": "string",
+      "required": true
+    },
+    "monthlyPaymentText": {
+      "type": "string",
+      "required": true
+    },
+    "interestRateText": {
+      "type": "string",
+      "required": true
+    },
+    "yearsText": {
+      "type": "string"
+    }
+  }
+}

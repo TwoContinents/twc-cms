@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_property_home_page_hero_sections",
+  "info": {
+    "displayName": "HomePageHeroSection"
+  },
+  "options": {},
+  "attributes": {
+    "featuredTitle": {
+      "type": "text",
+      "required": true
+    },
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text",
+      "required": true
+    },
+    "featuredSubtitle": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

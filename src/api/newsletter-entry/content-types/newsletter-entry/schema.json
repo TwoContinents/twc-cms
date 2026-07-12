@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "newsletter_entries",
+  "info": {
+    "singularName": "newsletter-entry",
+    "pluralName": "newsletter-entries",
+    "displayName": "NewsletterEntry"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "string"
+    },
+    "fullName": {
+      "type": "string"
+    }
+  }
+}

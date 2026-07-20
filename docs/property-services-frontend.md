@@ -48,18 +48,19 @@ REST endpoint:
 
 Purpose:
 
-Shared template content used across all property service detail pages.
+Shared template headings used across all property service detail pages.
 
 Fields:
 
 - `seo`: required `shared.seo` component
-- `moreInformationSection`: required `shared.section` component with `title`, `subtitle`, and `tag`
-- `moreInformationText`: required localized CKEditor HTML content
+- `detailsSectionTitle`: required localized string for the service details section heading
+- `gallerySectionTitle`: required localized string for the gallery section heading
+- `contactSectionTitle`: required localized string for the contact section heading
 
 Recommended query:
 
 ```text
-/api/property-services-page?populate[seo][populate]=*&populate[moreInformationSection]=true
+/api/property-services-page?populate[seo][populate]=*
 ```
 
 ## Notes

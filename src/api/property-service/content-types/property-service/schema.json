@@ -4,7 +4,7 @@
   "info": {
     "singularName": "property-service",
     "pluralName": "property-services",
-    "displayName": "Property Service",
+    "displayName": "PropertyService",
     "description": "Service pages for property management, holiday homes, interior design, maintenance, and similar services."
   },
   "options": {

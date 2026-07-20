@@ -2,7 +2,7 @@
 
 This adds service detail pages and shared template content for those pages.
 
-## Collection Type: Property Service
+## Collection Type: PropertyService
 
 API UID: `api::property-service.property-service`
 

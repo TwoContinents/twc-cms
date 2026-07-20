@@ -269,6 +269,10 @@ async function main() {
 }
 
 
-module.exports = async () => {
+module.exports = async ({ strapi }) => {
+  if (strapi.config.environment === 'production') {
+    return;
+  }
+
   await seedExampleApp();
 };

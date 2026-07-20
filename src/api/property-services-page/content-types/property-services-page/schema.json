@@ -1,0 +1,55 @@
+{
+  "kind": "singleType",
+  "collectionName": "property_services_pages",
+  "info": {
+    "singularName": "property-services-page",
+    "pluralName": "property-services-pages",
+    "displayName": "Property Services Page",
+    "description": "Shared template content for property service detail pages."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "moreInformationSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.section",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "moreInformationText": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}
